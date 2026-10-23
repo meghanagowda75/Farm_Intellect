@@ -1,0 +1,97 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables — never commit secrets
+.env
+.env.*
+!.env.example
+
+# Backend specific
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/*.log
+backend/logs/
+backend/*.db
+backend/*.db-journal
+backend/uploads/
+lint-report.txt
+bun.lock
+bun.lockb
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vercel/
+.gradle/
+build/
+
+# Environment files and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Dependencies and build output
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Ignore nested environment files
+**/.env
+**/.env.*
+
+# Keep old Git history and local backups out of GitHub
+.git_old/
+Farm_Intellect_git_history_backup/
+
+# Local environment files and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Dependencies and generated output
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Local backup files
+*.bak
+*.backup
+
+# Android local configuration
+android/local.properties
+
+# Generated Android build output
+android/.gradle/
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/build/
+
+# Generated Capacitor web assets
+android/app/src/main/assets/public/

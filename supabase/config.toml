@@ -1,0 +1,30 @@
+project_id = "exynaicvgadoenjfunqz"
+
+[functions.chat]
+verify_jwt = false
+
+# weather function validates JWT in code — no config override needed for defense-in-depth
+
+[functions.market-prices]
+verify_jwt = false
+
+[functions.send-otp]
+verify_jwt = false
+
+[functions.verify-otp]
+verify_jwt = false
+
+[functions.reset-passkey]
+verify_jwt = false
+
+[functions.generate-alerts]
+verify_jwt = false
+
+[functions.sms-dispatcher]
+verify_jwt = false
+
+[functions.missed-call-webhook]
+verify_jwt = false
+
+[functions.sms-delivery-webhook]
+verify_jwt = false
