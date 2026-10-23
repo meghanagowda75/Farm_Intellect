@@ -185,7 +185,6 @@ export const DocumentUpload = ({
     setError("");
 
     try {
-      let blob: Blob;
 
       // Use the local mock document storage.
       const dataUrl = await apiFetch<string>(
@@ -216,7 +215,7 @@ export const DocumentUpload = ({
         bytes[i] = binary.charCodeAt(i);
       }
 
-      blob = new Blob([bytes], { type: mimeType });
+      const blob = new Blob([bytes], { type: mimeType });
 
       if (!blob.size) {
         throw new Error("The downloaded document is empty.");

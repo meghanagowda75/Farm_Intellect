@@ -143,11 +143,13 @@ const VoiceConsole = () => {
               src.start(start);
               playhead = start + buffer.duration;
             }
-          } catch {}
+          } catch (error) {
+            console.warn("Audio playback cleanup failed:", error);
+          }
         }
       }
-    } catch (e: any) {
-      toast.error(e?.message || "TTS test failed");
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "TTS test failed");
     }
   };
 
